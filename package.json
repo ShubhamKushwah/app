@@ -4,7 +4,9 @@
   "description": "Full Stack Web App, for dating app demonstration",
   "main": "server.js",
   "scripts": {
-    "start": "npm start --prefix client/",
+    "start": "concurrently \"npm run start:client\" \"npm run start:server\"",
+    "start:server": "NODE_ENV=development nodemon server.js",
+    "start:client": "NODE_ENV=development npm start --prefix client/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,5 +14,13 @@
     "App"
   ],
   "author": "Shubham Kushwah",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.9"
+  }
 }
