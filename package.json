@@ -1,0 +1,16 @@
+{
+  "name": "dating-app",
+  "version": "1.0.0",
+  "description": "Full Stack Web App, for dating app demonstration",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm start --prefix client/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Dating",
+    "App"
+  ],
+  "author": "Shubham Kushwah",
+  "license": "ISC"
+}
