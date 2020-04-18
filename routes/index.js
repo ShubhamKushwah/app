@@ -1,5 +1,5 @@
 const Controllers = require('../controllers')
 
-module.exports = app => {
-  app.use('/', Controllers())
+module.exports = (app, upload, io) => {
+  app.use('/', Controllers(upload, io))
 }
