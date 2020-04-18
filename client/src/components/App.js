@@ -252,7 +252,7 @@ export default () => {
         <br />
         <br />
         <Divider />
-        <h2>{feed.length ? 'Explore' : 'Loading...'}</h2>
+        <h2>{feed.length ? 'Explore' : 'No Profiles found. Fetching...'}</h2>
         <Grid container>
           {feed.map(profile => (
             <Grid item xs={4}>
